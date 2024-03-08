@@ -1,0 +1,26 @@
+[project]
+name = "Albion-Dungeon-Scanner"
+version = "0.1.1"
+description = "Default template for PDM package"
+authors = [
+    {name = "grantUser", email = "grantuser@skiff.com"},
+]
+dependencies = [
+    "rich>=13.7.0",
+    "pyyaml>=6.0.1",
+    "pycryptodome>=3.20.0",
+]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.scripts]
+scan = "scanner:main"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
